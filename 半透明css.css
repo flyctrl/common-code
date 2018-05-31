@@ -1,0 +1,4 @@
+.topnav{ background-color:rgba(0, 0, 0, 0.7); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#b2000000', EndColorStr='#b2000000');}
+:root .topnav{ filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#b2000000', EndColorStr='#b2000000');}
+
+/*alert(Math.floor(255*0.7).toString(16));*/
