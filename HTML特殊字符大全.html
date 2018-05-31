@@ -1,0 +1,1634 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HTML特殊字符大全</title>
+<style type="text/css">
+<!--
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+sup { vertical-align: text-top; } /* 重置，减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+/* Headings
+-------------------------------------------------------------- */
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+/* Lists
+-------------------------------------------------------------- */
+li ul,
+li ol  { margin: 0; }
+ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
+ul     { list-style-type: disc; }
+ol     { list-style-type: decimal; }
+/* Tables
+-------------------------------------------------------------- */
+
+/*
+  Because of the need for padding on TH and TD, the vertical rhythm
+  on table cells has to be 27px, instead of the standard 18px or 36px
+  of other elements.
+ */
+table         { margin-bottom: 1.4em; width:100%; }
+th            { font-weight: bold; }
+thead th      { background: #c3d9ff; }
+th,td,caption { padding: 4px 10px 4px 5px; }
+/*
+  You can zebra-stripe your tables in outdated browsers by adding
+  the class "even" to every other table row.
+ */
+tbody tr:nth-child(even) td,
+tbody tr.even td  {
+  background: #e5ecf9;
+}
+th, td{border:1px solid #999;}
+tfoot       { font-style: italic; }
+caption     { background: #eee; }
+
+.center960{width:960px; margin:0 auto;}
+
+-->
+</style>
+</head>
+
+<body>	
+	<div class="center960">
+		<h1>HTML特殊字符大全</h1>
+    	<h3>使用方法：</h3>
+		<ul>
+			<li>这些字符属于unicode字符集，所以，你的文档需要声明为UTF-8；</li>
+			<li>下面符号列表的后面有两列编号，它们并不太一样，第一列是用于html的，你需要在前面加上&#符号；</li>
+			<li>第二列可以用于CSS文件中，但是需要用反斜杠\转义；</li>
+			<li>第二列也可以用于javascript，和CSS用法一样，不过要用\u来转义。</li>
+		</ul>
+		<h3>使用方法：</h3>
+		<ul>
+			<li>有的字符在不同的浏览器下表现不太一样；比如小雪人&#9731 在firefox和Chrome下不太一样，钻石&#9670 在IE下要比Chrome下要大一点儿；</li>
+			<li>有的字符在某个浏览器下不会显示；当然原因并不是字符代码的问题，而是浏览器的bug，比如，–在Chrome下。。。</li>
+			<li>但是，98%的字符都能在所有浏览器下正常显示的，不过如果你真的要使用，最好仔细在各个浏览器下验证一番。</li>
+			<li>经测试这些字符在Android/iOS等智能终端的识别度比较差，所以，使用的时候要特别注意移动浏览器～～</li>
+		</ul>
+		<h4>各种箭头</h4>
+		<table>
+			<thead>
+				<tr>
+					<th>图标（各种箭头）</th>
+					<th>HTML (&#)</th>
+					<th>CSS & Javascript (\)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&#8672</td>
+					<td>8672</td>
+					<td>21E0</td>
+				</tr>
+				<tr>
+					<td>&#8674</td>
+					<td>8674</td>
+					<td>21E2</td>
+				</tr>
+				<tr>
+					<td>&#8673</td>
+					<td>8673</td>
+					<td>21E1</td>
+				</tr>
+				<tr>
+					<td>&#8675</td>
+					<td>8675</td>
+					<td>21E3</td>
+				</tr>
+				<tr>
+					<td>&#8606 </td>
+					<td>8606 </td>
+					<td>219E</td>
+				</tr>
+				<tr>
+					<td>&#8608</td>
+					<td>8608</td>
+					<td>21A0</td>
+				</tr>
+				<tr>
+					<td>&#8607</td>
+					<td>8607</td>
+					<td>219F</td>
+				</tr>
+				<tr>
+					<td>&#8609</td>
+					<td>8609</td>
+					<td>21A1</td>
+				</tr>
+				<tr>
+					<td>&#8592</td>
+					<td>8592</td>
+					<td>2190</td>
+				</tr>
+				<tr>
+					<td>&#8594</td>
+					<td>8594</td>
+					<td>2192</td>
+				</tr>
+				<tr>
+					<td>&#8593</td>
+					<td>8593</td>
+					<td>2191</td>
+				</tr>
+				<tr>
+					<td>&#8595 </td>
+					<td>8595 </td>
+					<td>2193</td>
+				</tr>
+				<tr>
+					<td>&#8596</td>
+					<td>8596</td>
+					<td>2194</td>
+				</tr>
+				<tr>
+					<td>&#8597</td>
+					<td>8597</td>
+					<td>2195</td>
+				</tr>
+				<tr>
+					<td>&#8644 </td>
+					<td>8644 </td>
+					<td>21C4</td>
+				</tr>
+				<tr>
+					<td>&#8645 </td>
+					<td>8645 </td>
+					<td>21C5</td>
+				</tr>
+				<tr>
+					<td>&#8610</td>
+					<td>8610</td>
+					<td>21A2</td>
+				</tr>
+				<tr>
+					<td>&#8611</td>
+					<td>8611</td>
+					<td>21A3</td>
+				</tr>
+				<tr>
+					<td>&#8670</td>
+					<td>8670</td>
+					<td>21DE</td>
+				</tr>
+				<tr>
+					<td>&#8671</td>
+					<td>8671</td>
+					<td>21DF</td>
+				</tr>
+				<tr>
+					<td>&#8619</td>
+					<td>8619</td>
+					<td>21AB</td>
+				</tr>
+				<tr>
+					<td>&#8620</td>
+					<td>8620</td>
+					<td>21AC</td>
+				</tr>
+				<tr>
+					<td>&#8668</td>
+					<td>8668</td>
+					<td>21DC</td>
+				</tr>
+				<tr>
+					<td>&#8669</td>
+					<td>8669</td>
+					<td>21DD</td>
+				</tr>
+				<tr>
+					<td>&#8602</td>
+					<td>8602</td>
+					<td>219A</td>
+				</tr>
+				<tr>
+					<td>&#8603</td>
+					<td>8603</td>
+					<td>219B</td>
+				</tr>
+				<tr>
+					<td>&#8622 </td>
+					<td>8622 </td>
+					<td>21AE</td>
+				</tr>
+				<tr>
+					<td>&#8621</td>
+					<td>8621</td>
+					<td>21AD</td>
+				</tr>
+				<tr>
+					<td colspan="3">形状</td>
+				</tr>
+				<tr>
+					<td>&#8678 </td>
+					<td>8678 </td>
+					<td>21E6</td>
+				</tr>
+				<tr>
+					<td>&#8680</td>
+					<td>8680</td>
+					<td>21E8</td>
+				</tr>
+				<tr>
+					<td>&#8679 </td>
+					<td>8679 </td>
+					<td>21E7</td>
+				</tr>
+				<tr>
+					<td>&#8681</td>
+					<td>8681</td>
+					<td>21E9</td>
+				</tr>
+				<tr>
+					<td>&#8631</td>
+					<td>8631</td>
+					<td>21B7</td>
+				</tr>
+				<tr>
+					<td>&#8630</td>
+					<td>8630</td>
+					<td>21B6</td>
+				</tr>
+				<tr>
+					<td>&#8635</td>
+					<td>8635</td>
+					<td>21BB</td>
+				</tr>
+				<tr>
+					<td>&#8634</td>
+					<td>8634</td>
+					<td>21BA</td>
+				</tr>
+				<tr>
+					<td>&#10227</td>
+					<td>10227</td>
+					<td>27F3</td>
+				</tr>
+				<tr>
+					<td>&#10226 </td>
+					<td>10226 </td>
+					<td>27F2</td>
+				</tr>
+				<tr>
+					<td>&#10224</td>
+					<td>10224</td>
+					<td>27F0</td>
+				</tr>
+				<tr>
+					<td>&#10225</td>
+					<td>10225</td>
+					<td>27F1</td>
+				</tr>
+				<tr>
+					<td>&#8629</td>
+					<td>8629</td>
+					<td>21B5</td>
+				</tr>
+				<tr>
+					<td>&#8623</td>
+					<td>8623</td>
+					<td>21AF</td>
+				</tr>
+				<tr>
+					<td>&#8693</td>
+					<td>8693</td>
+					<td>21F5</td>
+				</tr>
+				<tr>
+					<td colspan="3">向右的箭头</td>
+				</tr>
+				<tr>
+					<td>&#10132</td>
+					<td>10132</td>
+					<td>2794</td>
+				</tr>
+				<tr>
+					<td>&#10137</td>
+					<td>10137</td>
+					<td>2799</td>
+				</tr>
+				<tr>
+					<td>&#10152</td>
+					<td>10152</td>
+					<td>27A8</td>
+				</tr>
+				<tr>
+					<td>&#10162</td>
+					<td>10162</td>
+					<td>27B2</td>
+				</tr>
+				<tr>
+					<td>&#10140</td>
+					<td>10140</td>
+					<td>279C</td>
+				</tr>
+				<tr>
+					<td>&#10142</td>
+					<td>10142</td>
+					<td>279E</td>
+				</tr>
+				<tr>
+					<td>&#10143</td>
+					<td>10143</td>
+					<td>279F</td>
+				</tr>
+				<tr>
+					<td>&#10144 </td>
+					<td>10144 </td>
+					<td>27A0</td>
+				</tr>
+				<tr>
+					<td>&#10148</td>
+					<td>10148</td>
+					<td>27A4</td>
+				</tr>
+				<tr>
+					<td>&#10149</td>
+					<td>10149</td>
+					<td>27A5</td>
+				</tr>
+				<tr>
+					<td>&#10150</td>
+					<td>10150</td>
+					<td>27A6</td>
+				</tr>
+				<tr>
+					<td>&#10151 </td>
+					<td>10151</td>
+					<td>27A7</td>
+				</tr>
+				<tr>
+					<td>&#10165</td>
+					<td>10165</td>
+					<td>27B5</td>
+				</tr>
+				<tr>
+					<td>&#10168</td>
+					<td>10168</td>
+					<td>27B8</td>
+				</tr>
+				<tr>
+					<td>&#10172</td>
+					<td>10172</td>
+					<td>27BC</td>
+				</tr>
+				<tr>
+					<td>&#10173 </td>
+					<td>10173 </td>
+					<td>27BD</td>
+				</tr>
+				<tr>
+					<td>&#10170 </td>
+					<td>10170 </td>
+					<td>27BA</td>
+				</tr>
+				<tr>
+					<td>&#10163</td>
+					<td>10163</td>
+					<td>27B3</td>
+				</tr>
+				<tr>
+					<td>&#10174</td>
+					<td>10174</td>
+					<td>27BE</td>
+				</tr>
+				<tr>
+					<td colspan="3">基本形状</td>
+				</tr>
+				<tr>
+					<td>&#9650 </td>
+					<td>9650 </td>
+					<td>25B2</td>
+				</tr>
+				<tr>
+					<td>&#9658</td>
+					<td>9658</td>
+					<td>25BA</td>
+				</tr>
+				<tr>
+					<td>&#9660</td>
+					<td>9660</td>
+					<td>25BC</td>
+				</tr>
+				<tr>
+					<td>&#9668</td>
+					<td>9668</td>
+					<td>25C4</td>
+				</tr>
+				<tr>
+					<td>&#10084</td>
+					<td>10084</td>
+					<td>2764</td>
+				</tr>
+				<tr>
+					<td>&#9992 </td>
+					<td>9992 </td>
+					<td>2708</td>
+				</tr>
+				<tr>
+					<td>&#9733</td>
+					<td>9733</td>
+					<td>2605</td>
+				</tr>
+				<tr>
+					<td>&#10022</td>
+					<td>10022</td>
+					<td>2726</td>
+				</tr>
+				<tr>
+					<td>&#9728</td>
+					<td>9728</td>
+					<td>2600</td>
+				</tr>
+				<tr>
+					<td>&#9670 </td>
+					<td>9670 </td>
+					<td>25C6</td>
+				</tr>
+				<tr>
+					<td>&#9672</td>
+					<td>9672</td>
+					<td>25C8</td>
+				</tr>
+				<tr>
+					<td>&#9635</td>
+					<td>9635</td>
+					<td>25A3</td>
+				</tr>
+
+				<tr>
+					<td colspan="3">标点</td>
+				</tr>
+				<tr>
+					<td>&#171</td>
+					<td>171</td>
+					<td>00AB</td>
+				</tr>
+				<tr>
+					<td>&#187</td>
+					<td>187</td>
+					<td>00BB</td>
+				</tr>
+				<tr>
+					<td>&#139</td>
+					<td>139</td>
+					<td>008B</td>
+				</tr>
+				<tr>
+					<td>&#155 </td>
+					<td>155 </td>
+					<td>009B</td>
+				</tr>
+				<tr>
+					<td>&#8220</td>
+					<td>8220</td>
+					<td>201C</td>
+				</tr>
+				<tr>
+					<td>&#8221 </td>
+					<td>8221 </td>
+					<td>201D</td>
+				</tr>
+				<tr>
+					<td>&#8216</td>
+					<td>8216</td>
+					<td>2018</td>
+				</tr>
+				<tr>
+					<td>&#8217 </td>
+					<td>8217 </td>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<td>&#8226</td>
+					<td>8226</td>
+					<td>2022</td>
+				</tr>
+				<tr>
+					<td>&#9702</td>
+					<td>9702</td>
+					<td>25E6</td>
+				</tr>
+				<tr>
+					<td>&#161</td>
+					<td>161</td>
+					<td>00A1</td>
+				</tr>
+				<tr>
+					<td>&#191 </td>
+					<td>191 </td>
+					<td>00BF</td>
+				</tr>
+				<tr>
+					<td>&#8453 </td>
+					<td>8453 </td>
+					<td>2105</td>
+				</tr>
+				<tr>
+					<td>&#8470 </td>
+					<td>8470 </td>
+					<td>2116</td>
+				</tr>
+				<tr>
+					<td>&#38</td>
+					<td>38</td>
+					<td>0026</td>
+				</tr>
+				<tr>
+					<td>&#64</td>
+					<td>64</td>
+					<td>0040</td>
+				</tr>
+				<tr>
+					<td>&#8478 </td>
+					<td>8478</td>
+					<td>211E</td>
+				</tr>
+				<tr>
+					<td>&#8451</td>
+					<td>8451</td>
+					<td>2103</td>
+				</tr>
+				<tr>
+					<td>&#8457 </td>
+					<td>8457 </td>
+					<td>2109</td>
+				</tr>
+				<tr>
+					<td>&#176</td>
+					<td>176</td>
+					<td>00B0</td>
+				</tr>
+				<tr>
+					<td>&#124</td>
+					<td>124</td>
+					<td>007C</td>
+				</tr>
+				<tr>
+					<td>&#166</td>
+					<td>166</td>
+					<td>00A6</td>
+				</tr>
+				<tr>
+					<td>&#8211</td>
+					<td>8211</td>
+					<td>2013</td>
+				</tr>
+				<tr>
+					<td>&#8212</td>
+					<td>8212</td>
+					<td>2014</td>
+				</tr>
+				<tr>
+					<td>&#8230</td>
+					<td>8230</td>
+					<td>2026</td>
+				</tr>
+				<tr>
+					<td>&#182 </td>
+					<td>00B6</td>
+					<td>00B6</td>
+				</tr>
+				<tr>
+					<td>&#8764</td>
+					<td>8764</td>
+					<td>223C</td>
+				</tr>
+				<tr>
+					<td>&#8800 </td>
+					<td>8800 </td>
+					<td>2260</td>
+				</tr>
+				<tr>
+					<td colspan="3">法律符号</td>
+				</tr>
+				<tr>
+					<td>&#174</td>
+					<td>174</td>
+					<td>00AE</td>
+				</tr>
+				<tr>
+					<td>&#169</td>
+					<td>169</td>
+					<td>00A9</td>
+				</tr>
+				<tr>
+					<td>&#8471</td>
+					<td>8471</td>
+					<td>2117</td>
+				</tr>
+				<tr>
+					<td>&#153 </td>
+					<td>153 </td>
+					<td>0099</td>
+				</tr>
+				<tr>
+					<td>&#8480 </td>
+					<td>8480 </td>
+					<td>2120</td>
+				</tr>
+				<tr>
+					<td colspan="3">货币</td>
+				</tr>
+				<tr>
+					<td>&#36 </td>
+					<td>36 </td>
+					<td>0024</td>
+				</tr>
+				<tr>
+					<td>&#162</td>
+					<td>162</td>
+					<td>00A2</td>
+				</tr>
+				<tr>
+					<td>&#163</td>
+					<td>163</td>
+					<td>00A3</td>
+				</tr>
+				<tr>
+					<td>&#164</td>
+					<td>164</td>
+					<td>00A4</td>
+				</tr>
+				<tr>
+					<td>&#8364</td>
+					<td>8364</td>
+					<td>20AC</td>
+				</tr>
+				<tr>
+					<td>&#165</td>
+					<td>165</td>
+					<td>00A5</td>
+				</tr>
+				<tr>
+					<td>&#8369</td>
+					<td>8369</td>
+					<td>20B1</td>
+				</tr>
+				<tr>
+					<td>&#8377</td>
+					<td>8377</td>
+					<td>20B9</td>
+				</tr>
+				<tr>
+					<td colspan="3">数学</td>
+				</tr>
+				<tr>
+					<td>&#189</td>
+					<td>189</td>
+					<td>00BD</td>
+				</tr>
+				<tr>
+					<td>&#188</td>
+					<td>188</td>
+					<td>00BC</td>
+				</tr>
+				<tr>
+					<td>&#190 </td>
+					<td>190 </td>
+					<td>00BE</td>
+				</tr>
+				<tr>
+					<td>&#8531 </td>
+					<td>8531 </td>
+					<td>2153</td>
+				</tr>
+				<tr>
+					<td>&#8532</td>
+					<td>8532</td>
+					<td>2154</td>
+				</tr>
+				<tr>
+					<td>&#8539</td>
+					<td>8539</td>
+					<td>215B</td>
+				</tr>
+				<tr>
+					<td>&#8540</td>
+					<td>8540</td>
+					<td>215C</td>
+				</tr>
+				<tr>
+					<td>&#8541</td>
+					<td>8541</td>
+					<td>215D</td>
+				</tr>
+				<tr>
+					<td>&#8240</td>
+					<td>8240</td>
+					<td>2030</td>
+				</tr>
+				<tr>
+					<td>&#37 </td>
+					<td>37 </td>
+					<td>0025</td>
+				</tr>
+				<tr>
+					<td>&#60</td>
+					<td>60</td>
+					<td>003C</td>
+				</tr>
+				<tr>
+					<td>&#62</td>
+					<td>62</td>
+					<td>003E</td>
+				</tr>
+				<tr>
+					<td colspan="3">音乐符号</td>
+				</tr>
+
+				<tr>
+					<td>&#9833</td>
+					<td>9833</td>
+					<td>2669</td>
+				</tr>
+				<tr>
+					<td>&#9834 </td>
+					<td>9834 </td>
+					<td>266A</td>
+				</tr>
+				<tr>
+					<td>&#9835 </td>
+					<td>9835 </td>
+					<td>266B</td>
+				</tr>
+				<tr>
+					<td>&#9836</td>
+					<td>9836</td>
+					<td>266C</td>
+				</tr>
+				<tr>
+					<td>&#9837</td>
+					<td>9837</td>
+					<td>266D</td>
+				</tr>
+				<tr>
+					<td>&#9839 </td>
+					<td>9839 </td>
+					<td>266F</td>
+				</tr>
+				<tr>
+					<td colspan="3">对号、错号</td>
+				</tr>
+				<tr>
+					<td>&#160 </td>
+					<td>160 </td>
+					<td>00A0</td>
+				</tr>
+				<tr>
+					<td>&#9744</td>
+					<td>9744</td>
+					<td>2610</td>
+				</tr>
+				<tr>
+					<td>&#9745</td>
+					<td>9745</td>
+					<td>2611</td>
+				</tr>
+				<tr>
+					<td>&#9746</td>
+					<td>9746</td>
+					<td>2612</td>
+				</tr>
+				<tr>
+					<td>&#10003</td>
+					<td>10003</td>
+					<td>2713</td>
+				</tr>
+				<tr>
+					<td>&#10004</td>
+					<td>10004</td>
+					<td>2714</td>
+				</tr>
+				<tr>
+					<td>&#10005</td>
+					<td>10005</td>
+					<td>10005</td>
+				</tr>
+				<tr>
+					<td>&#10006 </td>
+					<td>10006 </td>
+					<td>2716</td>
+				</tr>
+				<tr>
+					<td>&#10007</td>
+					<td>10007</td>
+					<td>2717</td>
+				</tr>
+				<tr>
+					<td>&#10008</td>
+					<td>10008</td>
+					<td>2718</td>
+				</tr>
+				<tr>
+					<td colspan="3">十字</td>
+				</tr>
+				<tr>
+					<td>&#9768</td>
+					<td>9768</td>
+					<td>2628</td>
+				</tr>
+				<tr>
+					<td>&#9769</td>
+					<td>9769</td>
+					<td>2629</td>
+				</tr>
+				<tr>
+					<td>&#10013</td>
+					<td>10013</td>
+					<td>271D</td>
+				</tr>
+				<tr>
+					<td>&#10014</td>
+					<td>10014</td>
+					<td>271E</td>
+				</tr>
+				<tr>
+					<td>&#10015</td>
+					<td>10015</td>
+					<td>271F</td>
+				</tr>
+				<tr>
+					<td>&#10016</td>
+					<td>10016</td>
+					<td>2720</td>
+				</tr>
+				<tr>
+					<td>&#10010</td>
+					<td>10010</td>
+					<td>271A</td>
+				</tr>
+				<tr>
+					<td>&#8224</td>
+					<td>8224</td>
+					<td>2020</td>
+				</tr>
+				<tr>
+					<td>&#10018</td>
+					<td>10018</td>
+					<td>2722</td>
+				</tr>
+				<tr>
+					<td>&#10020</td>
+					<td>10020</td>
+					<td>2724</td>
+				</tr>
+				<tr>
+					<td>&#10019</td>
+					<td>10019</td>
+					<td>2723</td>
+				</tr>
+				<tr>
+					<td>&#10021 </td>
+					<td>10021</td>
+					<td>2725</td>
+				</tr>
+				<tr>
+					<td colspan="3">星星、星号、雪花</td>
+				</tr>
+				<tr>
+					<td>&#9733</td>
+					<td>9733</td>
+					<td>2605</td>
+				</tr>
+				<tr>
+					<td>&#10029 </td>
+					<td>10029 </td>
+					<td>272D</td>
+				</tr>
+				<tr>
+					<td>&#10030</td>
+					<td>10030</td>
+					<td>272E</td>
+				</tr>
+				<tr>
+					<td>&#9734</td>
+					<td>9734</td>
+					<td>2606</td>
+				</tr>
+				<tr>
+					<td>&#10026</td>
+					<td>10026</td>
+					<td>272A</td>
+				</tr>
+				<tr>
+					<td>&#10017</td>
+					<td>10017</td>
+					<td>2721</td>
+				</tr>
+				<tr>
+					<td>&#10031 </td>
+					<td>10031 </td>
+					<td>272F</td>
+				</tr>
+				<tr>
+					<td>&#10037 </td>
+					<td>10037 </td>
+					<td>2735</td>
+				</tr>
+				<tr>
+					<td>&#10038</td>
+					<td>10038</td>
+					<td>2736</td>
+				</tr>
+				<tr>
+					<td>&#10040</td>
+					<td>10040</td>
+					<td>2738</td>
+				</tr>
+				<tr>
+					<td>&#10041</td>
+					<td>10041</td>
+					<td>2739</td>
+				</tr>
+				<tr>
+					<td>&#10042 </td>
+					<td>10042 </td>
+					<td>273A</td>
+				</tr>
+				<tr>
+					<td>&#10033 </td>
+					<td>10033 </td>
+					<td>2731</td>
+				</tr>
+				<tr>
+					<td>&#10034 </td>
+					<td>10034 </td>
+					<td>2732</td>
+				</tr>
+				<tr>
+					<td>&#10036 </td>
+					<td>10036 </td>
+					<td>2734</td>
+				</tr>
+				<tr>
+					<td>&#10035</td>
+					<td>10035</td>
+					<td>2733</td>
+				</tr>
+				<tr>
+					<td>&#10043</td>
+					<td>10043</td>
+					<td>273B</td>
+				</tr>
+				<tr>
+					<td>&#10045</td>
+					<td>10045</td>
+					<td>273D</td>
+				</tr>
+				<tr>
+					<td>&#10059 </td>
+					<td>10059 </td>
+					<td>274B</td>
+				</tr>
+				<tr>
+					<td>&#10054</td>
+					<td>10054</td>
+					<td>2746</td>
+				</tr>
+				<tr>
+					<td>&#10052</td>
+					<td>10052</td>
+					<td>2744</td>
+				</tr>
+				<tr>
+					<td>&#10053</td>
+					<td>10053</td>
+					<td>2745</td>
+				</tr>
+				<tr>
+					<td colspan="3">杂项</td>
+				</tr>
+				<tr>
+					<td>&#9787</td>
+					<td>9787</td>
+					<td>263B</td>
+				</tr>
+				<tr>
+					<td>&#9786 </td>
+					<td>9786 </td>
+					<td>263A</td>
+				</tr>
+				<tr>
+					<td>&#9785</td>
+					<td>9785</td>
+					<td>2639</td>
+				</tr>
+				<tr>
+					<td>&#9993</td>
+					<td>9993</td>
+					<td>2709</td>
+				</tr>
+				<tr>
+					<td>&#9742</td>
+					<td>9742</td>
+					<td>260E</td>
+				</tr>
+				<tr>
+					<td>&#9743</td>
+					<td>9743</td>
+					<td>260F</td>
+				</tr>
+				<tr>
+					<td>&#9990</td>
+					<td>9990</td>
+					<td>2706</td>
+				</tr>
+				<tr>
+					<td>&#65533</td>
+					<td>65533</td>
+					<td>FFFD</td>
+				</tr>
+				<tr>
+					<td>&#9729</td>
+					<td>9729</td>
+					<td>2601</td>
+				</tr>
+
+				<tr>
+					<td>&#9730</td>
+					<td>9730</td>
+					<td>2602</td>
+				</tr>
+				<tr>
+					<td>&#10052</td>
+					<td>10052</td>
+					<td>2744</td>
+				</tr>
+				<tr>
+					<td>&#9731</td>
+					<td>9731</td>
+					<td>2603</td>
+				</tr>
+				<tr>
+					<td>&#10056</td>
+					<td>10056</td>
+					<td>2748</td>
+				</tr>
+				<tr>
+					<td>&#10047</td>
+					<td>10047</td>
+					<td>273F</td>
+				</tr>
+				<tr>
+					<td>&#10048</td>
+					<td>10048</td>
+					<td>2740</td>
+				</tr>
+				<tr>
+					<td>&#10049</td>
+					<td>10049</td>
+					<td>2741</td>
+				</tr>
+				<tr>
+					<td>&#9752</td>
+					<td>9752</td>
+					<td>2618</td>
+				</tr>
+				<tr>
+					<td>&#10086 </td>
+					<td>10086 </td>
+					<td>2766</td>
+				</tr>
+				<tr>
+					<td>&#9749 </td>
+					<td>9749 </td>
+					<td>9749</td>
+				</tr>
+				<tr>
+					<td>&#10050</td>
+					<td>10050</td>
+					<td>2742</td>
+				</tr>
+				<tr>
+					<td>&#9765 </td>
+					<td>9765 </td>
+					<td>2625</td>
+				</tr>
+				<tr>
+					<td>&#9774 </td>
+					<td>9774 </td>
+					<td>262E</td>
+				</tr>
+				<tr>
+					<td>&#9775</td>
+					<td>9775</td>
+					<td>262F</td>
+				</tr>
+				<tr>
+					<td>&#9770</td>
+					<td>9770</td>
+					<td>262A</td>
+				</tr>
+				<tr>
+					<td>&#9764 </td>
+					<td>9764 </td>
+					<td>2624</td>
+				</tr>
+				<tr>
+					<td>&#9988</td>
+					<td>9988</td>
+					<td>2704</td>
+				</tr>
+				<tr>
+					<td>&#9986</td>
+					<td>9986</td>
+					<td>2702</td>
+				</tr>
+				<tr>
+					<td>&#9784</td>
+					<td>9784</td>
+					<td>2638</td>
+				</tr>
+				<tr>
+					<td>&#9875</td>
+					<td>9875</td>
+					<td>2693</td>
+				</tr>
+				<tr>
+					<td>&#9763 </td>
+					<td>9763 </td>
+					<td>2623</td>
+				</tr>
+				<tr>
+					<td>&#9888 </td>
+					<td>9888 </td>
+					<td>26A0</td>
+				</tr>
+				<tr>
+					<td>&#9889</td>
+					<td>9889</td>
+					<td>26A1</td>
+				</tr>
+				<tr>
+					<td>&#9762 </td>
+					<td>9762 </td>
+					<td>2622</td>
+				</tr>
+				<tr>
+					<td>&#9851 </td>
+					<td>9851 </td>
+					<td>267B</td>
+				</tr>
+				<tr>
+					<td>&#9855</td>
+					<td>9855</td>
+					<td>267F</td>
+				</tr>
+				<tr>
+					<td>&#9760</td>
+					<td>9760</td>
+					<td>2620</td>
+				</tr>
+				<tr>
+					<td colspan="3">手型、铅笔、笔</td>
+				</tr>
+				<tr>
+					<td>&#9756 </td>
+					<td>9756 </td>
+					<td>261C</td>
+				</tr>
+				<tr>
+					<td>&#9758</td>
+					<td>9758</td>
+					<td>261E</td>
+				</tr>
+				<tr>
+					<td>&#9757</td>
+					<td>9757</td>
+					<td>261D</td>
+				</tr>
+				<tr>
+					<td>&#9759 </td>
+					<td>9759 </td>
+					<td>261F</td>
+				</tr>
+				<tr>
+					<td>&#9996</td>
+					<td>9996</td>
+					<td>270C</td>
+				</tr>
+				<tr>
+					<td>&#9997</td>
+					<td>9997</td>
+					<td>270D</td>
+				</tr>
+				<tr>
+					<td>&#9998 </td>
+					<td>9998 </td>
+					<td>270E</td>
+				</tr>
+				<tr>
+					<td>&#10000</td>
+					<td>10000</td>
+					<td>2710</td>
+				</tr>
+				<tr>
+					<td>&#9999 </td>
+					<td>9999 </td>
+					<td>270F</td>
+				</tr>
+				<tr>
+					<td>&#10001 </td>
+					<td>10001 </td>
+					<td>2711</td>
+				</tr>
+				<tr>
+					<td>&#10002</td>
+					<td>10002</td>
+					<td>2712</td>
+				</tr>
+				<tr>
+					<td colspan="3">天空、植物</td>
+				</tr>
+				<tr>
+					<td>&#9789 </td>
+					<td>9789 </td>
+					<td>263D</td>
+				</tr>
+				<tr>
+					<td>&#9790 </td>
+					<td>9790 </td>
+					<td>263E</td>
+				</tr>
+				<tr>
+					<td>&#9794</td>
+					<td>9794</td>
+					<td>2642</td>
+				</tr>
+				<tr>
+					<td>&#9792 </td>
+					<td>9792 </td>
+					<td>2640</td>
+				</tr>
+				<tr>
+					<td>&#9791 </td>
+					<td>9791 </td>
+					<td>263F</td>
+				</tr>
+				<tr>
+					<td>&#9793</td>
+					<td>9793</td>
+					<td>2641</td>
+				</tr>
+				<tr>
+					<td>&#9795</td>
+					<td>9795</td>
+					<td>2643</td>
+				</tr>
+				<tr>
+					<td>&#9796</td>
+					<td>9796/td>
+					<td>2644</td>
+				</tr>
+				<tr>
+					<td>&#9797 </td>
+					<td>9797 </td>
+					<td>2645</td>
+				</tr>
+				<tr>
+					<td>&#9798 </td>
+					<td>9798 </td>
+					<td>2646</td>
+				</tr>
+				<tr>
+					<td>&#9799 </td>
+					<td>9799 </td>
+					<td>2647</td>
+				</tr>
+				<tr>
+					<td colspan="3">星座</td>
+				</tr>
+				<tr>
+					<td>&#9800</td>
+					<td>9800</td>
+					<td>2648</td>
+				</tr>
+				<tr>
+					<td>&#9801</td>
+					<td>9801</td>
+					<td>2649</td>
+				</tr>
+				<tr>
+					<td>&#9802</td>
+					<td>9802</td>
+					<td>264A</td>
+				</tr>
+				<tr>
+					<td>&#9803 </td>
+					<td>9803 </td>
+					<td>264B</td>
+				</tr><tr>
+					<td>&#9804 </td>
+					<td>9804 </td>
+					<td>264C</td>
+				</tr>
+				<tr>
+					<td>&#9805</td>
+					<td>9805</td>
+					<td>264D</td>
+				</tr>
+				<tr>
+					<td>&#9806</td>
+					<td>9806</td>
+					<td>264E</td>
+				</tr>
+				<tr>
+					<td>&#9807</td>
+					<td>9807</td>
+					<td>264F</td>
+				</tr>
+				<tr>
+					<td>&#9809</td>
+					<td>9809</td>
+					<td>2651</td>
+				</tr>
+				<tr>
+					<td>&#9810</td>
+					<td>9810</td>
+					<td>2652</td>
+				</tr>
+
+				<tr>
+					<td>&#9811 </td>
+					<td>9811 </td>
+					<td>2653</td>
+				</tr>
+				<tr>
+					<td colspan="3">象棋，扑克牌</td>
+				</tr>
+				<tr>
+					<td>&#9818 </td>
+					<td>9818 </td>
+					<td>265A</td>
+				</tr>
+				<tr>
+					<td>&#9819</td>
+					<td>9819</td>
+					<td>265B</td>
+				</tr>
+				<tr>
+					<td>&#9820</td>
+					<td>9820</td>
+					<td>265C</td>
+				</tr>
+				<tr>
+					<td>&#9821</td>
+					<td>9821</td>
+					<td>265D</td>
+				</tr>
+				<tr>
+					<td>&#9822</td>
+					<td>9822</td>
+					<td>265E</td>
+				</tr>
+				<tr>
+					<td>&#9823</td>
+					<td>9823</td>
+					<td>265F</td>
+				</tr>
+				<tr>
+					<td>&#9812 </td>
+					<td>9812 </td>
+					<td>2654</td>
+				</tr>
+				<tr>
+					<td>&#9813</td>
+					<td>9813</td>
+					<td>2655</td>
+				</tr>
+				<tr>
+					<td>&#9814</td>
+					<td>9814</td>
+					<td>2656</td>
+				</tr>
+				<tr>
+					<td>&#9815</td>
+					<td>9815</td>
+					<td>2657</td>
+				</tr>
+				<tr>
+					<td>&#9816</td>
+					<td>9816</td>
+					<td>2658</td>
+				</tr>
+				<tr>
+					<td>&#9817</td>
+					<td>9817</td>
+					<td>2659</td>
+				</tr>
+				<tr>
+					<td>&#9824 </td>
+					<td>9824 </td>
+					<td>2660</td>
+				</tr>
+				<tr>
+					<td>&#9827</td>
+					<td>9827</td>
+					<td>2663</td>
+				</tr>
+				<tr>
+					<td>&#9829</td>
+					<td>9829</td>
+					<td>2665</td>
+				</tr>
+				<tr>
+					<td>&#9830</td>
+					<td>9830</td>
+					<td>2666</td>
+				</tr>
+				<tr>
+					<td>&#9828</td>
+					<td>9828</td>
+					<td>2664</td>
+				</tr>
+				<tr>
+					<td>&#9831</td>
+					<td>9831</td>
+					<td>2667</td>
+				</tr>
+				<tr>
+					<td>&#9825 </td>
+					<td>9825 </td>
+					<td>2661</td>
+				</tr>
+				<tr>
+					<td>&#9826</td>
+					<td>9826</td>
+					<td>2662</td>
+				</tr>
+				<tr>
+					<td colspan="3">希腊字母</td>
+				</tr>
+
+				<tr>
+					<td>&#913 </td>
+					<td>913 </td>
+					<td>0391</td>
+				</tr>
+				<tr>
+					<td>&#914 </td>
+					<td>914 </td>
+					<td>0392</td>
+				</tr>
+				<tr>
+					<td>&#915</td>
+					<td>915</td>
+					<td>0393</td>
+				</tr>
+				<tr>
+					<td>&#916 </td>
+					<td>916 </td>
+					<td>0394</td>
+				</tr>
+				<tr>
+					<td>&#917</td>
+					<td>917</td>
+					<td>0395</td>
+				</tr>
+				<tr>
+					<td>&#918</td>
+					<td>918</td>
+					<td>0396</td>
+				</tr>
+				<tr>
+					<td>&#919</td>
+					<td>919</td>
+					<td>0397</td>
+				</tr>
+				<tr>
+					<td>&#920</td>
+					<td>920</td>
+					<td>0398</td>
+				</tr>
+				<tr>
+					<td>&#921</td>
+					<td>921</td>
+					<td>0399</td>
+				</tr>
+				<tr>
+					<td>&#922 </td>
+					<td>922 </td>
+					<td>039A</td>
+				</tr>
+				<tr>
+					<td>&#923</td>
+					<td>923</td>
+					<td>039B</td>
+				</tr>
+				<tr>
+					<td>&#924 </td>
+					<td>924 </td>
+					<td>039C</td>
+				</tr>
+				<tr>
+					<td>&#925</td>
+					<td>925</td>
+					<td>039D</td>
+				</tr>
+				<tr>
+					<td>&#926 </td>
+					<td>926 </td>
+					<td>039E</td>
+				</tr>
+				<tr>
+					<td>&#927</td>
+					<td>927</td>
+					<td>039F</td>
+				</tr>
+				<tr>
+					<td>&#928</td>
+					<td>928</td>
+					<td>03A0</td>
+				</tr>
+				<tr>
+					<td>&#929 </td>
+					<td>929 </td>
+					<td>03A1</td>
+				</tr>
+				<tr>
+					<td>&#931 </td>
+					<td>931 </td>
+					<td>03A3</td>
+				</tr>
+				<tr>
+					<td>&#932</td>
+					<td>932</td>
+					<td>03A4</td>
+				</tr>
+				<tr>
+					<td>&#933 </td>
+					<td>933 </td>
+					<td>03A5</td>
+				</tr>
+				<tr>
+					<td>&#934</td>
+					<td>934</td>
+					<td>03A6</td>
+				</tr>
+				<tr>
+					<td>&#935</td>
+					<td>935</td>
+					<td>03A7</td>
+				</tr>
+				<tr>
+					<td>&#936</td>
+					<td>936</td>
+					<td>03A8</td>
+				</tr>
+				<tr>
+					<td>&#937</td>
+					<td>937</td>
+					<td>03A9</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>    
+</body>
+</html>
