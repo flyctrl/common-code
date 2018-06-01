@@ -128,3 +128,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	text-overflow:ellipsis; /* IE, Safari (WebKit) */
 	_width: 100%; /* IE6 需要定义宽度 */
 }
+
+.ellipsis2{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
